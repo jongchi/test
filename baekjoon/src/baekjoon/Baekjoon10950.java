@@ -19,7 +19,7 @@ public class Baekjoon10950 {
 				
 			}
 		
-		System.out.println(sb.toString());
+		System.out.println(sb);
 
 	}
 

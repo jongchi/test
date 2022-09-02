@@ -30,7 +30,7 @@ public class Baekjoon8958 {
 			sb.append(result[i]+"\n");
 		}
 		
-		System.out.println(sb.toString());
+		System.out.println(sb);
 
 	}
 

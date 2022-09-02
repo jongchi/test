@@ -17,7 +17,7 @@ public class Baekjoon2742 {
 			sb.append(i+"\n");
 		}
 
-		System.out.println(sb.toString());
+		System.out.println(sb);
 		bf.close();
 	}
 
