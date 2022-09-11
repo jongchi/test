@@ -20,6 +20,7 @@ public class Baekjoon10871 {
 			}
 		}
 		System.out.println(sb);
+		sb.close();
 		
 	}
 
