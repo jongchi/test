@@ -1,9 +1,6 @@
 package baekjoon;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
 
 public class Baekjoon10871 {
 
@@ -20,8 +17,7 @@ public class Baekjoon10871 {
 			}
 		}
 		System.out.println(sb);
-		sb.close();
-		
+		sc.close();
 	}
 
 }
