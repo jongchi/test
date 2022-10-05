@@ -11,8 +11,8 @@ public class Baekjoon10816 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		HashMap<Integer, Integer> card = new HashMap<Integer, Integer>();
 		
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.valueOf(bf.readLine());					
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.valueOf(br.readLine());					
 		StringTokenizer stk = new StringTokenizer(bf.readLine()," ");				
 		
 		StringBuilder sb = new StringBuilder();
@@ -25,8 +25,8 @@ public class Baekjoon10816 {
 			}
 		}
 		
-		int M = Integer.valueOf(bf.readLine());
-		stk = new StringTokenizer(bf.readLine()," ");
+		int M = Integer.valueOf(br.readLine());
+		stk = new StringTokenizer(br.readLine()," ");
 		while(stk.hasMoreTokens()) {
 			int num = Integer.valueOf(stk.nextToken());
 			if(card.get(num) != null) {
