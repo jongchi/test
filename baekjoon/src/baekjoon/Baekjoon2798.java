@@ -11,14 +11,14 @@ public class Baekjoon2798 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		StringTokenizer stk = new StringTokenizer(br.readLine());
-		int n = Integer.valueOf(stk.nextToken());				// 카드의 개수		
-		int m = Integer.valueOf(stk.nextToken());				// 목표 값
+		int n = Integer.parseInt(stk.nextToken());				// 카드의 개수		
+		int m = Integer.parseInt(stk.nextToken());				// 목표 값
 		int max = 0;
 		
 		stk = new StringTokenizer(br.readLine(), " ");
 		int[] list = new int[n];
 		for(int i=0; i< n; i++) {
-			list[i] = Integer.valueOf(stk.nextToken());
+			list[i] = Integer.parseInt(stk.nextToken());
 		}
 		
 		for(int i=0;i<n-2;i++) {

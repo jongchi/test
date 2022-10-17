@@ -12,8 +12,8 @@ public class Baekjoon4101 {
 		StringTokenizer stk;
 		while(true) {
 			stk = new StringTokenizer(bf.readLine());
-			int x = Integer.valueOf(stk.nextToken());
-			int y = Integer.valueOf(stk.nextToken());
+			int x = Integer.parseInt(stk.nextToken());
+			int y = Integer.parseInt(stk.nextToken());
 			
 			if(x == 0 && y == 0) {
 				return;

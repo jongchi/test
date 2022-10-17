@@ -14,7 +14,7 @@ public class Baekjoon1181 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		int count = Integer.valueOf(br.readLine());
+		int count = Integer.parseInt(br.readLine());
 		Set<String> set = new HashSet<String>();											// set 사용해서 중복 값 제거
 		
 		for(int i=0;i<count;i++) {

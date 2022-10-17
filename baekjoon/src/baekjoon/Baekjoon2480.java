@@ -11,9 +11,9 @@ public class Baekjoon2480 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer stk = new StringTokenizer(br.readLine()," ");
 		
-		int i = Integer.valueOf(stk.nextToken());
-		int j = Integer.valueOf(stk.nextToken());
-		int k = Integer.valueOf(stk.nextToken());
+		int i = Integer.parseInt(stk.nextToken());
+		int j = Integer.parseInt(stk.nextToken());
+		int k = Integer.parseInt(stk.nextToken());
 		int max = 0;
 		if(i==j&&j==k) {
 			System.out.println(10000+i*1000);

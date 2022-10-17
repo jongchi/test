@@ -18,7 +18,7 @@ public class Baekjoon1380 {
 		HashSet<Integer> earrings = new HashSet<Integer>();							// 귀걸이 압수당한 리스트 확인
 		int caseNumber = 1;
 		while(true) {
-			int count = Integer.valueOf(br.readLine());
+			int count = Integer.parseInt(br.readLine());
 			
 			if(count == 0) {
 				break;
@@ -31,7 +31,7 @@ public class Baekjoon1380 {
 				
 				for(int i=0;i<count*2-1;i++) {
 					stk = new StringTokenizer(br.readLine()," ");
-					int earring = Integer.valueOf(stk.nextToken());
+					int earring = Integer.parseInt(stk.nextToken());
 					if(earrings.contains(earring)) {
 						earrings.remove(earring);
 					} else {

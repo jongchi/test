@@ -14,10 +14,10 @@ public class Baekjoon2751 {
 		List<Integer> list = new ArrayList<Integer>();
 		StringBuilder sb = new StringBuilder();
 		
-		int count = Integer.valueOf(br.readLine());
+		int count = Integer.parseInt(br.readLine());
 		
 		for(int i=0;i<count;i++) {
-			list.add(Integer.valueOf(br.readLine()));
+			list.add(Integer.parseInt(br.readLine()));
 		}
 		
 		Collections.sort(list);

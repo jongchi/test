@@ -13,10 +13,10 @@ public class Baekjoon1085 {
 		
 		int result = 0;
 		
-		int x = Integer.valueOf(stk.nextToken());
-		int y = Integer.valueOf(stk.nextToken());
-		int w = Integer.valueOf(stk.nextToken());
-		int h = Integer.valueOf(stk.nextToken());
+		int x = Integer.parseInt(stk.nextToken());
+		int y = Integer.parseInt(stk.nextToken());
+		int w = Integer.parseInt(stk.nextToken());
+		int h = Integer.parseInt(stk.nextToken());
 		
 		int n = w - x < x ? w - x : x;							// 가로 길이 계산
 		int m = h - y < y ? h - y : y;							// 세로 길이 계산

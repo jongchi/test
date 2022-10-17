@@ -8,7 +8,7 @@ public class Baekjoon2292 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		
-		int n = Integer.valueOf(bf.readLine()) - 1;			// 계산 용이하게 하기 위해 1 빼주고 시작
+		int n = Integer.parseInt(bf.readLine()) - 1;			// 계산 용이하게 하기 위해 1 빼주고 시작
 		int count = 1;
 		
 		while(n > 0) {				

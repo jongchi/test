@@ -12,12 +12,12 @@ public class Baekjoon10816 {
 		HashMap<Integer, Integer> card = new HashMap<Integer, Integer>();
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.valueOf(br.readLine());					
-		StringTokenizer stk = new StringTokenizer(bf.readLine()," ");				
+		int N = Integer.parseInt(br.readLine());					
+		StringTokenizer stk = new StringTokenizer(br.readLine()," ");				
 		
 		StringBuilder sb = new StringBuilder();
 		while(stk.hasMoreTokens()) {
-			int num = Integer.valueOf(stk.nextToken());
+			int num = Integer.parseInt(stk.nextToken());
 			if(card.get(num) != null) {
 				card.put(num, card.get(num)+1);
 			} else {
@@ -25,10 +25,10 @@ public class Baekjoon10816 {
 			}
 		}
 		
-		int M = Integer.valueOf(br.readLine());
+		int M = Integer.parseInt(br.readLine());
 		stk = new StringTokenizer(br.readLine()," ");
 		while(stk.hasMoreTokens()) {
-			int num = Integer.valueOf(stk.nextToken());
+			int num = Integer.parseInt(stk.nextToken());
 			if(card.get(num) != null) {
 				sb.append(card.get(num)+" ");
 			} else {

@@ -18,8 +18,8 @@ public class Baekjoon2083 {
 			stk = new StringTokenizer(input);
 			
 			String name = stk.nextToken();
-			int age = Integer.valueOf(stk.nextToken());
-			int weight = Integer.valueOf(stk.nextToken());
+			int age = Integer.parseInt(stk.nextToken());
+			int weight = Integer.parseInt(stk.nextToken());
 			
 			if(name.equals("#")) {
 				System.out.println(sb);

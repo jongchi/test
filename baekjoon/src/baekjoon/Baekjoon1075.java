@@ -9,8 +9,8 @@ public class Baekjoon1075 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int n = Integer.valueOf(br.readLine());
-		int f = Integer.valueOf(br.readLine());
+		int n = Integer.parseInt(br.readLine());
+		int f = Integer.parseInt(br.readLine());
 		int result = 0;
 		
 		n = n/100*100;									// 가장 뒤 두자리를 00으로 리셋.

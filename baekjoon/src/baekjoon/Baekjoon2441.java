@@ -9,7 +9,7 @@ public class Baekjoon2441 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int n = Integer.valueOf(br.readLine());
+		int n = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
 		for(int i=n;i>0;i--) {
 			int x = n-i;

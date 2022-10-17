@@ -14,11 +14,11 @@ public class Baekjoon11650 {
 		List<Point> list = new ArrayList<Point>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer stk; 
-		int count = Integer.valueOf(br.readLine());
+		int count = Integer.parseInt(br.readLine());
 		
 		for(int i=0;i<count;i++) {
 			stk = new StringTokenizer(br.readLine(), " ");
-			list.add(new Point(Integer.valueOf(stk.nextToken()), Integer.valueOf(stk.nextToken())));
+			list.add(new Point(Integer.parseInt(stk.nextToken()), Integer.parseInt(stk.nextToken())));
 		}
 		
 		Collections.sort(list);

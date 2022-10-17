@@ -15,7 +15,7 @@ public class Baekjoon1247 {
 		
 		
 		while(cnt < 3) {
-			int n = Integer.valueOf(bf.readLine());
+			int n = Integer.parseInt(bf.readLine());
 			BigInteger sum = new BigInteger("0");
 			for(int i=0; i<n; i++) {
 				sum = sum.add(new BigInteger(bf.readLine())); 

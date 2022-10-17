@@ -11,8 +11,8 @@ public class Baekjoon1598 {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer stk = new StringTokenizer(bf.readLine());
 		
-		Integer n = Integer.valueOf(stk.nextToken());
-		Integer m = Integer.valueOf(stk.nextToken());
+		Integer n = Integer.parseInt(stk.nextToken());
+		Integer m = Integer.parseInt(stk.nextToken());
 		int x1 = n%4 == 0 ? n/4-1 : n/4;							// n이 4의 배수면 1--
 		int x2 = m%4 == 0 ? m/4-1 : m/4;
 		int x = x1 > x2 ? x1 - x2 : x2 - x1;

@@ -12,9 +12,9 @@ public class Baekjoon4153 {
 		int tmp = 0;
 		while(true) {
 			StringTokenizer stk = new StringTokenizer(bf.readLine()," ");
-			int a = Integer.valueOf(stk.nextToken());
-			int b = Integer.valueOf(stk.nextToken());
-			int c = Integer.valueOf(stk.nextToken());
+			int a = Integer.parseInt(stk.nextToken());
+			int b = Integer.parseInt(stk.nextToken());
+			int c = Integer.parseInt(stk.nextToken());
 			
 			if(a < 1 || b < 1 || c < 1) {					// 길이 0을 입력 받으면 즉시 종료
 				return;

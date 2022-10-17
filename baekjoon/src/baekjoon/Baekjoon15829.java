@@ -9,7 +9,7 @@ public class Baekjoon15829 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int len = Integer.valueOf(br.readLine());
+		int len = Integer.parseInt(br.readLine());
 		String str = br.readLine();
 		BigInteger r = new BigInteger("1");
 		BigInteger r2 = new BigInteger("31");

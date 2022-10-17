@@ -25,11 +25,11 @@ public class Baekjoon2775 {
 			}
 		}
 		
-		int count = Integer.valueOf(br.readLine());
+		int count = Integer.parseInt(br.readLine());
 		while(count>0) {
 			count--;
-			int k = Integer.valueOf(br.readLine());
-			int n = Integer.valueOf(br.readLine());
+			int k = Integer.parseInt(br.readLine());
+			int n = Integer.parseInt(br.readLine());
 			sb.append(people[k][n]+"\n");
 		}
 		

@@ -8,7 +8,7 @@ public class Baekjoon2839 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.valueOf(bf.readLine());
+		int n = Integer.parseInt(bf.readLine());
 		int count = 0;
 		
 		while(n%5 > 0) {			// 5로 나뉘어지는 수가 아니면 3개씩 봉지에 담음

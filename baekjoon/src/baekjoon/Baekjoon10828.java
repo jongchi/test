@@ -14,7 +14,7 @@ public class Baekjoon10828 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer stk;
 		StringBuilder sb = new StringBuilder();
-		int n = Integer.valueOf(br.readLine());
+		int n = Integer.parseInt(br.readLine());
 		
 		while(n>0) {
 			n--;
@@ -23,7 +23,7 @@ public class Baekjoon10828 {
 			
 			switch(cmd) {
 				case "push":
-					stack.push(Integer.valueOf(stk.nextToken()));
+					stack.push(Integer.parseInt(stk.nextToken()));
 					break;
 				case "pop":
 					addText(sb, stack.pop());
