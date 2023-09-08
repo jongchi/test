@@ -14,33 +14,33 @@ public class Baekjoon9012 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int t = Integer.parseInt(br.readLine());
-		
 		for(int i=0;i<t;i++) {
-			int cnt = 0;
-			String ret;
-			String[] input = br.readLine().split("");
-			Stack<String> stack = new Stack<String>();
-			for(String str : input) {
-				stack.push(str);
-			}
-			int size = stack.size();
-			for(int j=0;j<size;j++) {
-				if(stack.pop().equals(")")) {
-					cnt++;
+			boolean complete = true;
+			String input = br.readLine();
+			Stack<Character> stack = new Stack<Character>();
+			for(int j=0;j<input.length();j++) {
+				char ch = input.charAt(j);
+				if(ch == '(') {
+					stack.push(ch);
 				} else {
-					cnt--;
-				}
-				if(cnt<0) {
-					ret = "NO";
-					break;
+					if(stack.size() == 0) {
+						complete = false;
+						continue;
+					} else {
+						stack.pop();
+					}
 				}
 			}
-			if(cnt == 0) {
-				ret = "YES";
+			
+			if(complete) {
+				if(stack.size() == 0) {
+					bw.write("YES\n");
+				} else {
+					bw.write("NO\n");
+				}
 			} else {
-				ret = "NO";
+				bw.write("NO\n");
 			}
-			bw.write(ret+"\n");
 		}
 		bw.flush();
 	}
